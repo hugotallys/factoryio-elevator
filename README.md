@@ -60,3 +60,56 @@ Após percorrer todos os níveis e coletar as placas, o elevador retorna ao nív
 <p align="center"> 
 <b>Figura 5:</b> Descarga da caixa carregada.
 </p>
+
+## Tabela de endereçamento: 
+
+### Entradas:
+
+| Endereço    | Tag                | Tipo |
+| :--------:  |:-------:           |:----:|
+| %I0.6       | At 0 (low)         | Bool |
+| %I0.7       | At 0 (high)        | Bool |
+| %I1.0       | At 1 (low)         | Bool |
+| %I1.1       | At 1 (high)        | Bool |
+| %I1.2       | At 2 (low)         | Bool |
+| %I1.3       | At 2 (high)        | Bool |
+| %I1.4       | At 3 (low)         | Bool |
+| %I1.5       | At 3 (high)        | Bool |
+| %I1.6       | Start              | Bool |
+| %I1.7       | Reset              | Bool |
+| %I2.0       | Stop               | Bool |
+| %I2.1       | Emergency stop     | Bool |
+| %I2.2       | Auto               | Bool |
+| %I2.4       | Sen. Entrada Elev. | Bool |
+| %I2.5       | Sen. Sobre Elev.   | Bool |
+| %I2.6       | Sen. Saída Elev.   | Bool |
+| %I2.7       | At 1               | Bool |
+| %I3.0       | At 1               | Bool |
+| %I3.1       | At 1               | Bool |
+
+### Saídas:
+
+| Endereço    | Tag              | Tipo |
+| :--------:  |:-------:         |:----:|
+| %Q0.0       | Esteira 0        | Bool |
+| %Q0.1       | Esteira 1        | Bool |
+| %Q0.2       | Esteira 2        | Bool |
+| %Q0.3       | Esteira 3        | Bool |
+| %Q0.4       | Esteira saída    | Bool |
+| %Q0.5       | Esteira elevador | Bool |
+| %Q0.7       | Subir            | Bool |
+| %Q1.0       | Descer           | Bool |
+| %Q1.1       | Devagar          | Bool |
+| %Q1.6       | Andar 1          | Bool |
+| %Q1.7       | Andar 2          | Bool |
+| %Q2.0       | Andar 3          | Bool |
+
+## Resultado:
+
+A implementação pode ser visualizada em [Diagrama Ladder](LADDER.pdf)
+
+![](/scene.gif)
+
+O vídeo abaixo mostra o processo automatizado em execução.
+
+Link para o [video demonstração](https://drive.google.com/file/d/1qyd7SovjUZViOz5Hya8sowwSeOZYcnKQ/view?usp=share_link)
